@@ -22,12 +22,12 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
   background-color: var(--neutral-main-bg);
-  color: var(--white);
-  min-width: 200px;
-  max-width: 1440px;
+  color: var(--soft-1);
   height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -38,6 +38,7 @@ main {
   padding-right: 1.4rem;
   padding-bottom: 0.8rem;
   padding-left: 1.2rem;
+  border-radius: 12px;
   justify-content: center;
   align-self: center;
   display: flex;
@@ -47,22 +48,46 @@ main {
   background-color: var(--card-bg);
 }
 
+.card-pic {
+  width: 260px;
+}
+
+h3 {
+  color: var(--white);
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+h3:hover {
+  cursor: pointer;
+}
+
+h3:active {
+  color: var(--soft-2);
+}
+
 
 .container-2 {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-
-
+  border-bottom: 1px solid var(--card-line);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-pic {
   width: 100%;
+  border-radius: 10px;
 }
 
-.left-cont1 {
-display: 
+.card-pic:hover {
+  cursor: pointer;
+}
+
+.card-pic:active {
+  background-color: var(--soft-1);
 }
 
 .eth-icon,
@@ -71,23 +96,44 @@ display:
 .time-p
  {
   display: inline;
-}
-
-.right-cont2 {
-
-}
-
-.end-container {
-
-}
-
-.card-pic {
-  width: 260px;
-}
-
-.eth-icon,
-.clock-icon,
-.eth-p,
-.time-p {
   vertical-align: middle;
 }
+
+.eth-p {
+  color: var(--soft-2);
+  margin-left: 0.2rem;
+}
+
+.time-p {
+  margin-left: 0.2rem;
+}
+
+
+
+.end-container {
+  display: flex;
+}
+
+.author {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  align-self: center;
+  
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+span:active {
+  color: var(--soft-2);
+}
+
+
