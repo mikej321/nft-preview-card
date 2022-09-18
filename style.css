@@ -1,79 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 *, *::before, *::after {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 :root {
   --soft-1: hsl(215, 51%, 70%);
   --soft-2: hsl(178, 100%, 50%);
-
+  
   --neutral-main-bg: hsl(217, 54%, 11%);
-  --neutral-card-bg: hsl(216, 50%, 16%);
-  --neutral-line: hsl(215, 32%, 27%);
+  --card-bg: hsl(216, 50%, 16%);
+  --card-line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
 }
 
-body {
+html {
   margin: 0;
+}
+
+body {
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
   background-color: var(--neutral-main-bg);
+  color: var(--white);
+  min-width: 200px;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
 }
 
 main {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+  padding-right: 1.4rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  justify-content: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  margin: 10rem 5rem;
+  background-color: var(--card-bg);
 }
 
-main:not(h1) {
-  color: var(--white);
-  font-weight: 300;
-}
 
-h1 {
-  color: var(--white);
-}
-
-.ether-bar {
+.container-2 {
   display: flex;
-  border: 1px solid white;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+
+
 }
 
-.inline-p,
-.img-icon {
+.card-pic {
+  width: 100%;
+}
+
+.left-cont1 {
+display: 
+}
+
+.eth-icon,
+.eth-p,
+.clock-icon,
+.time-p
+ {
   display: inline;
 }
 
-.inline-p {
-  
+.right-cont2 {
+
 }
 
-.img-icon {
+.end-container {
+
+}
+
+.card-pic {
+  width: 260px;
+}
+
+.eth-icon,
+.clock-icon,
+.eth-p,
+.time-p {
   vertical-align: middle;
-}
-
-
-
-.image-1,
-.image-2 {
-  
-}
-
-img {
-  max-width: 320px;
-  min-width: 250px;
-  width: 100%;
-}
-
-.img-icon {
-  width: 100%;
-  min-width: 20px;
-  max-width: 24px;
 }
