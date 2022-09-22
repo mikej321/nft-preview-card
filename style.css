@@ -23,8 +23,8 @@ body {
   font-size: 18px;
   background-color: var(--neutral-main-bg);
   color: var(--soft-1);
-  height: 100vh;
-  width: 100vw;
+  min-height: 375px;
+  max-height: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +61,10 @@ h3 {
 
 h3:hover {
   cursor: pointer;
-}
-
-h3:active {
   color: var(--soft-2);
 }
+
+
 
 
 .container-2 {
@@ -95,8 +94,10 @@ h3:active {
 }
 
 .card-container:hover .overlay {
-  opacity: 0.5;
+  opacity: 1;
 }
+
+
 
 .overlay {
   width: 100%;
@@ -107,7 +108,7 @@ h3:active {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: .3s ease;
+  transition: .5s ease;
   background-color: var(--soft-2);
   
 }
@@ -123,6 +124,7 @@ h3:active {
 
 .icon:hover {
   cursor: pointer;
+  fill:hsl(0, 0%, 100%);
 }
 
 
@@ -168,10 +170,10 @@ span {
 
 span:hover {
   cursor: pointer;
-}
-
-span:active {
   color: var(--soft-2);
 }
+
+
+
 
 
