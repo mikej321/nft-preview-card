@@ -48,9 +48,10 @@ main {
   background-color: var(--card-bg);
 }
 
-.card-pic {
-  width: 260px;
-}
+
+
+
+
 
 h3 {
   color: var(--white);
@@ -77,18 +78,55 @@ h3:active {
   margin-bottom: 1rem;
 }
 
-.card-pic {
+.card-container {
   width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  position: relative;
+}
+
+.card-container, .card-pic, .overlay {
   border-radius: 10px;
 }
 
-.card-pic:hover {
+.card-pic {
+  width: 100%;
+  height: auto;
+}
+
+.card-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay {
+  width: 100%;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--soft-2);
+  
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icon:hover {
   cursor: pointer;
 }
 
-.card-pic:active {
-  background-color: var(--soft-1);
-}
+
+
 
 .eth-icon,
 .eth-p,
